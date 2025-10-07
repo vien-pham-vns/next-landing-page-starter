@@ -1,0 +1,28 @@
+{
+  "homePage": {
+    "description": "Probass, gpass website",
+    "hero": {
+      "title": "Welcome to Your Landing Page",
+      "description": "A modern, high-performance landing page built with Next.js 15, React 19, and cutting-edge technologies.",
+      "getStarted": "Get Started",
+      "learnMore": "Learn More"
+    }
+  },
+  "navigation": {
+    "home": "Home",
+    "about": "About",
+    "features": "Features",
+    "contact": "Contact"
+  },
+  "features": {
+    "title": "Features",
+    "performance": "High Performance",
+    "performanceDesc": "Built with Next.js 15 and optimized for Lighthouse scores",
+    "responsive": "Responsive Design",
+    "responsiveDesc": "Perfectly adapts to any screen size with Tailwind CSS v4",
+    "animations": "Smooth Animations",
+    "animationsDesc": "Enhanced user experience with Framer Motion",
+    "i18n": "Internationalization",
+    "i18nDesc": "Multi-language support with seamless locale switching"
+  }
+}
