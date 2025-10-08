@@ -57,7 +57,7 @@ export default async function RootLayout({
         <LocaleProvider locale={locale} dict={dict}>
           {children}
         </LocaleProvider>
-        {process.env.NODE_ENV !== "development" ? (
+        {process.env.NODE_ENV === "development" ? (
           <></>
         ) : (
           <>
