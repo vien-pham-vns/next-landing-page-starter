@@ -6,6 +6,7 @@ import "./globals.css";
 import { cookies } from "next/headers";
 import { LocaleProvider } from "@/providers/locale-provider";
 import { getDictionary, defaultLocale, type Locale } from "@/lib/i18n";
+import GoogleAnalytics from "./google-analytics";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -56,11 +57,12 @@ export default async function RootLayout({
         <LocaleProvider locale={locale} dict={dict}>
           {children}
         </LocaleProvider>
-        {process.env.NODE_ENV === "development" ? (
+        {process.env.NODE_ENV !== "development" ? (
           <></>
         ) : (
           <>
             <Analytics />
+            <GoogleAnalytics />
             <SpeedInsights />
           </>
         )}
